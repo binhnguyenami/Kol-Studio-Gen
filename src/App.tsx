@@ -45,7 +45,7 @@ export default function App() {
             <a href="#demo" className="hover:text-zinc-900 transition-colors">Demo</a>
           </div>
           <button className="text-sm font-medium bg-zinc-900 text-white px-4 py-2 rounded-full hover:bg-zinc-800 transition-colors">
-            Get Early Access
+            Coming Soon
           </button>
         </div>
       </nav>
