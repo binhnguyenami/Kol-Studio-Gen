@@ -410,20 +410,17 @@ export default function App() {
                 Built to make beautiful AI image generation easier, faster, and more controllable for everyone.
               </p>
             
-              <a     
-                href="mailto:hi@genstudioapp.com"
-                className="inline-block text-zinc-300 underline hover:text-white transition-colors mb-10">
-                hi@genstudioapp.com
-              </a> 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button onClick={() => setIsVideoModalOpen(true)} className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-zinc-900 px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition-colors">
                   <Play className="w-4 h-4 fill-current" />
                   Watch Demo
                 </button>
-                <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-zinc-700 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 transition-colors">
-                  Contact Us
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+               <a 
+                 href="mailto:hi@genstudioapp.com"
+                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-zinc-700 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 transition-colors">
+                 Contact Us
+               <ArrowRight className="w-4 h-4" />
+              </a>
               </div>
             </FadeIn>
           </div>
