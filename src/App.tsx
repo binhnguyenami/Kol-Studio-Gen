@@ -378,11 +378,11 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               {[
                 "https://i.postimg.cc/8PjvDmg5/kol-generated-1-(20).jpg",
-                "https://i.postimg.cc/wvqtrhkm/kol-generated-1-(27).jpg",
+                "https://i.postimg.cc/3J60rTWy/generated-image-2-(3).jpg",
                 "https://i.postimg.cc/Qx9FvNcx/kol-generated-1-(30).jpg",
                 "https://i.postimg.cc/rFrpQnLf/kol-generated-1-(1)-2.jpg",
                 "https://i.postimg.cc/Zn3CBVbd/kol-generated-1-(3)-3.jpg",
-                "https://i.postimg.cc/HLRYwXPR/kol-generated-1-(3)-2.jpg"
+                "https://i.postimg.cc/rmrM9BMW/generated-image-1-(2).jpg"
               ].map((src, i) => (
                 <FadeIn key={i} delay={i * 0.1} className="relative group rounded-xl overflow-hidden border border-zinc-200 bg-zinc-100 aspect-[4/5] shadow-sm">
                   <img 
