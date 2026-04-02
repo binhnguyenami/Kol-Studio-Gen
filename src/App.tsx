@@ -420,7 +420,7 @@ export default function App() {
           Nguyen Binh — Founder & Lead AI Developer
         </p>
         <a
-          href="https://www.linkedin.com/in/nguyen-binh-064a80307?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+          href="https://www.linkedin.com/in/nguyen-binh-064a80307/"
           target="_blank"
           rel="noreferrer"
           className="inline-block mt-4 text-zinc-900 font-medium underline underline-offset-4"
@@ -431,12 +431,11 @@ export default function App() {
         <h3 className="text-xl font-medium tracking-tight mt-10 mb-3 text-zinc-900">
           Contact
         </h3>
-        <a
-          href="mailto:hi@genstudioapp.com"
-          className="text-lg text-zinc-600 hover:text-zinc-900 transition-colors"
-        >
-          hi@genstudioapp.com
-        </a>
+        <div className="space-y-2 text-lg text-zinc-600">
+       <p>hi@genstudioapp.com</p>
+       <p>+84 395 051 840</p>
+        <p> Ho Chi Minh City, Vietnam</p>
+      </div>
       </div>
     </FadeIn>
   </div>
