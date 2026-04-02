@@ -420,7 +420,7 @@ export default function App() {
           Nguyen Binh — Founder & Lead AI Developer
         </p>
         <a
-          href="PASTE_YOUR_LINKEDIN_HERE"
+          href="https://www.linkedin.com/in/nguyen-binh-064a80307?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
           target="_blank"
           rel="noreferrer"
           className="inline-block mt-4 text-zinc-900 font-medium underline underline-offset-4"
