@@ -72,7 +72,6 @@ export default function App() {
                   Use visual controls first, then add prompts only when needed.
                 </p>
               </FadeIn>
-              
               <FadeIn delay={0.25}>
                 <p className="text-base text-zinc-500 mb-10 max-w-2xl mx-auto leading-relaxed">
                  KOL Studio Gen is an AI image generation product designed to create consistent, studio-quality visuals from a single reference.
