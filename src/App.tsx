@@ -36,8 +36,8 @@ export default function App() {
       <nav className="fixed top-0 w-full z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-zinc-900" />
-            <span className="font-semibold tracking-tight text-lg">KOL Studio Gen</span>
+          
+            <span className="font-semibold tracking-tight text-lg">KOL Studio Gen by GenStudio</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-500">
             <a href="#how-it-works" className="hover:text-zinc-900 transition-colors">How it works</a>
@@ -59,12 +59,7 @@ export default function App() {
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
               
               {/* Credibility Badges */}
-              <FadeIn className="flex justify-center mb-8">
-                <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-zinc-200 bg-white shadow-sm text-sm font-medium text-zinc-700">
-                  <Cpu className="w-4 h-4 text-zinc-500" />
-                  Built with Google AI tools
-                </div>
-              </FadeIn>
+        
 
               <FadeIn delay={0.1}>
                 <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-[1.1] mb-6">
@@ -77,6 +72,12 @@ export default function App() {
                   Use visual controls first, then add prompts only when needed.
                 </p>
               </FadeIn>
+              
+              <FadeIn delay={0.25}>
+                <p className="text-base text-zinc-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                 KOL Studio Gen is an AI image generation product designed to create consistent, studio-quality visuals from a single reference.
+               </p>
+             </FadeIn>
 
               <FadeIn delay={0.3} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
                 <button onClick={() => setIsVideoModalOpen(true)} className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 transition-colors">
@@ -328,10 +329,7 @@ export default function App() {
                 <ImageIcon className="w-6 h-6 text-zinc-900" />
                 <span className="font-medium text-lg text-zinc-900">Nano Banana Pro</span>
               </div>
-              <div className="flex items-center gap-3 px-6 py-4 rounded-xl border border-zinc-200 bg-zinc-50 shadow-sm">
-                <Sparkles className="w-6 h-6 text-zinc-900" />
-                <span className="font-medium text-lg text-zinc-900">Google AI tools</span>
-              </div>
+              
             </FadeIn>
           </div>
         </section>
@@ -398,45 +396,65 @@ export default function App() {
         </section>
 
         {/* 10. FINAL CTA SECTION */}
-        <section id="contact" className="py-32 relative overflow-hidden bg-zinc-950 text-white">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,_rgba(255,255,255,0.08)_0%,_transparent_50%)]" />
-          
-          <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <FadeIn>
-              <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 text-white">
-                A working AI visual generation MVP,<br /> ready to grow further.
-              </h2>
-              <p className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto">
-                Built to make beautiful AI image generation easier, faster, and more controllable for everyone.
-              </p>
-            
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button onClick={() => setIsVideoModalOpen(true)} className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-zinc-900 px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition-colors">
-                  <Play className="w-4 h-4 fill-current" />
-                  Watch Demo
-                </button>
-               <a 
-                 href="mailto:hi@genstudioapp.com"
-                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-zinc-700 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 transition-colors">
-                 Contact Us
-               <ArrowRight className="w-4 h-4" />
-              </a>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
+     <section id="contact" className="py-24 md:py-28 bg-zinc-50 border-t border-zinc-200">
+  <div className="max-w-6xl mx-auto px-6 grid gap-12 md:grid-cols-2">
+    <FadeIn>
+      <div>
+        <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6 text-zinc-900">
+          About GenStudio
+        </h2>
+        <p className="text-lg text-zinc-600 leading-relaxed mb-4">
+          GenStudio is an early-stage AI product studio focused on building practical tools for visual generation and content workflows.
+        </p>
+        <p className="text-lg text-zinc-600 leading-relaxed">
+          Our current product, KOL Studio Gen, is designed to create consistent, studio-quality images with strong identity preservation.
+        </p>
+      </div>
+    </FadeIn>
+
+    <FadeIn delay={0.1}>
+      <div>
+        <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6 text-zinc-900">
+          Founder
+        </h2>
+        <p className="text-lg text-zinc-600 leading-relaxed">
+          Nguyen Binh — Founder & Lead AI Developer
+        </p>
+        <a
+          href="PASTE_YOUR_LINKEDIN_HERE"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block mt-4 text-zinc-900 font-medium underline underline-offset-4"
+        >
+          LinkedIn
+        </a>
+
+        <h3 className="text-xl font-medium tracking-tight mt-10 mb-3 text-zinc-900">
+          Contact
+        </h3>
+        <a
+          href="mailto:hi@genstudioapp.com"
+          className="text-lg text-zinc-600 hover:text-zinc-900 transition-colors"
+        >
+          hi@genstudioapp.com
+        </a>
+      </div>
+    </FadeIn>
+  </div>
+</section>
       </main>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-zinc-200 bg-white text-center text-sm text-zinc-500">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-zinc-900" />
-            <span className="font-medium text-zinc-900">KOL Studio Gen</span>
-          </div>
-          <p>&copy; {new Date().getFullYear()} KOL Studio Gen. All rights reserved.</p>
-        </div>
-      </footer>
+     <footer className="border-t border-zinc-200 bg-white">
+  <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-sm text-zinc-500">
+    <div>
+      <div className="font-medium text-zinc-900">GenStudio</div>
+      <div>KOL Studio Gen</div>
+      <div>hi@genstudioapp.com</div>
+    </div>
+    <div>© 2026 GenStudio. All rights reserved.</div>
+  </div>
+</footer>
 
       {/* Video Modal */}
       <AnimatePresence>
